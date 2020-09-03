@@ -1,0 +1,218 @@
+.about {
+  width: 100%;
+}
+
+.about .madatech-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0;
+}
+
+.about .madatech-info .we {
+  font-size: 4rem;
+}
+
+.about .madatech-info .arrow-down {
+  font-size: 4rem;
+}
+
+.about .madatech-info .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .madatech-info .logo img {
+  width: 15%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  margin: 0 20px;
+}
+
+.about .madatech-info .logo span {
+  font-size: 3rem;
+  color: #4472c4;
+}
+
+.about .madatech-info .edu-love {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 2rem;
+}
+
+.about .madatech-info .edu-love .slogan {
+  font-size: 4rem;
+  margin-top: 30px;
+  color: #00e613;
+}
+
+.about .madatech-info .edu-love .slogan .heart {
+  color: red;
+}
+
+.about .madatech-info .about-madatech {
+  width: 80%;
+}
+
+.about .madatech-info .contact-section {
+  width: 80%;
+}
+
+.about .madatech-info .contact-section .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about .madatech-info .contact-section .contact-form .message-item {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.about .madatech-info .contact-section .contact-form .messeage-area {
+  font-size: 1.5rem;
+  border: solid 2px #00e613;
+}
+
+.about .madatech-info .contact-section .contact-form .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 20px 10px;
+}
+
+.about .madatech-info .contact-section .contact-form .button-container .button {
+  background-color: #00e613;
+  color: white;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10%;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .about {
+    width: 100%;
+  }
+  .about .madatech-info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 30px 0;
+  }
+  .about .madatech-info .we {
+    font-size: 2rem;
+  }
+  .about .madatech-info .arrow-down {
+    font-size: 2rem;
+  }
+  .about .madatech-info .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about .madatech-info .logo img {
+    width: 15%;
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    margin: 0 10px;
+  }
+  .about .madatech-info .logo span {
+    font-size: 2rem;
+    color: #4472c4;
+  }
+  .about .madatech-info .edu-love {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.5rem;
+  }
+  .about .madatech-info .edu-love .slogan {
+    font-size: 2rem;
+    margin-top: 30px;
+    color: #00e613;
+  }
+  .about .madatech-info .edu-love .slogan .heart {
+    color: red;
+  }
+  .about .madatech-info .about-madatech {
+    width: 80%;
+  }
+  .about .madatech-info .contact-section {
+    width: 80%;
+  }
+  .about .madatech-info .contact-section .contact-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .madatech-info .contact-section .contact-form .message-item {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  .about .madatech-info .contact-section .contact-form .messeage-area {
+    font-size: 1.2rem;
+    border: solid 2px #00e613;
+  }
+  .about .madatech-info .contact-section .contact-form .button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 20px 10px;
+  }
+  .about .madatech-info .contact-section .contact-form .button-container .button {
+    background-color: #00e613;
+    color: white;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10%;
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=About.css.map */

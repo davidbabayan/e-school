@@ -1,0 +1,102 @@
+.pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+.title {
+    color: #00e613;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.price {
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2rem;
+    color: #00e613;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.yearly {
+    font-weight: 800;
+    border-bottom: solid 2px #00e613;
+    padding-bottom: 20px;
+}
+
+.monthly {
+    border-bottom: solid 2px #00e613;
+    padding-bottom: 20px;
+}
+
+.info {
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    margin-left: 150px;
+}
+
+li {
+    margin: 20px 0;
+}
+
+.icon {
+    color: #00e613;
+    margin: 0 20px;
+}
+
+.coming {
+    color: #3c643f;
+    margin: 0 20px;
+}
+
+hr {
+    width: 70%;
+    background-color: #00e613;
+    height: 2px;
+    margin: 50px 0;
+}
+
+.demo {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.to-demo {
+    background-color: #00e613;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px 20px;
+    margin: 20px 20px;
+    border-radius: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+    .price {
+        width: 70%;
+        font-size: 1rem;
+    }
+
+    .separate {
+        width: 1px;
+        border-right: solid 1px #00e613;
+    }
+
+    ul {
+        margin: 0px 20px;
+        padding-left: 0;
+        font-size: 1rem;
+    }
+
+    .icon,
+    .coming {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+}
