@@ -18,13 +18,12 @@ function App() {
       </header>
       <section className='App-content'>
         <Router>
-          <Layout>
-            <Switch>
-              <Route path='/' exact component={Home} />
-              <Route path='/pricing' exact component={Pricing} />
-              <Route path='/about' exact component={About} />
-              <Route path='/privacy-policy' exact component={PrivacyPolicy} />
-              {/* <Route path='/register' exact component={} />
+          <Switch>
+            <Route path='/' exact component={Home} />
+            <Route path='/pricing' exact component={Pricing} />
+            <Route path='/about' exact component={About} />
+            <Route path='/privacy-policy' exact component={PrivacyPolicy} />
+            {/* <Route path='/register' exact component={} />
             <Route path='/register/terms' exact component={} />
             <Route path='/demo' exact component={} />
             <Route path='/students' exact component={} />
@@ -38,8 +37,7 @@ function App() {
             <Route path='/new/class' exact component={} />
             <Route path='/account' exact component={} />
             <Route path='/account/license' exact component={} /> */}
-            </Switch>
-          </Layout>
+          </Switch>
         </Router>
       </section>
       <footer className='App-footer'>
