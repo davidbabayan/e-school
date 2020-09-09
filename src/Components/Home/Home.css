@@ -1,196 +1,231 @@
 .home {
-    display: flex;
-    flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.home-intro {
-    display: flex;
-    width: 100%;
+.home .home-intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
-.home-intro-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 50%;
+.home .home-intro .home-intro-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
 }
 
-.home-intro-text-slogan {
+.home .home-intro .home-intro-text .home-intro-text-slogan {
+  font-size: 1.7rem;
+  text-align: center;
+  padding: 0 30px;
+}
+
+.home .home-intro .home-intro-text .home-intro-text-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.home .home-intro .home-intro-text .home-intro-text-buttons div {
+  background-color: #00e613;
+  color: white;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px 20px;
+  margin: 0 20px;
+  border-radius: 10%;
+}
+
+.home .home-intro .home-intro-img {
+  width: 50%;
+}
+
+.home .home-intro .home-intro-img .home-intro-img-source {
+  width: 100%;
+}
+
+.home .seperator {
+  height: 3px;
+  background-color: #00e613;
+  width: 100%;
+  margin: 0px;
+}
+
+.home .brand {
+  margin: 30px 20px;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.home .brand .brand-icon {
+  margin: 0 15px;
+  color: #00e613;
+}
+
+.home .brand p {
+  font-size: 2.5rem;
+}
+
+.home .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.home .section .icon {
+  width: 50%;
+}
+
+.home .section .text {
+  width: 50%;
+  height: 100%;
+  padding: 20px 75px;
+  vertical-align: center;
+}
+
+.home .section .text .title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.home .section .text .body {
+  font-size: 1.5rem;
+}
+
+.home .section .text .apply-link {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.home .section .text .apply-link a {
+  text-decoration: underline;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+  color: #00e613;
+}
+
+.home .section img {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.home .pricing-info {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.home .pricing-info .title {
+  font-size: 2rem;
+}
+
+.home .pricing-info .pricing-btn {
+  background-color: #00e613;
+  color: white;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px 20px;
+  width: 150px;
+  margin: 0 20px;
+  border-radius: 10%;
+}
+
+@media only screen and (max-width: 900px) {
+  .home .home-intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .home .home-intro .home-intro-text {
+    width: 100% !important;
+  }
+  .home .home-intro .home-intro-text .home-intro-text-slogan {
+    font-size: 1.2rem;
+    padding: 30px 20px;
+  }
+  .home .home-intro .home-intro-text .home-intro-text-buttons div {
+    padding: 10px 10px;
+    margin: 20px 20px;
+  }
+  .home .home-intro .home-intro-img {
+    width: 100% !important;
+  }
+  .home .brand {
+    font-size: 2rem;
+  }
+  .home .brand p {
+    font-size: 1.5rem;
+  }
+  .home .section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home .section .icon {
+    width: 80%;
+    margin: 0;
+  }
+  .home .section .text {
+    width: 80%;
+    margin: 0;
+  }
+  .home .section .text .title {
     font-size: 1.7rem;
-    text-align: center;
-    padding: 0 30px;
-}
-
-.home-intro-text-buttons {
+  }
+  .home .section .text .body {
+    font-size: 1.2rem;
+  }
+  .home .section-reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .home .pricing-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-}
-
-.home-intro-text-buttons div {
-    background-color: #00e613;
-    color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 10px 20px;
-    margin: 0 20px;
-    border-radius: 10%;
-}
-
-.home-intro-img {
-    width: 50%;
-}
-
-.home-intro-img-source {
-    width: 100%;
-}
-
-.seperator {
-    height: 3px;
-    background-color: #00e613;
-    width: 100%;
-    margin: 0px;
-}
-
-.brand {
-    margin: 30px 20px;
-    font-size: 3rem;
-    text-align: center;
-}
-
-.brand-icon {
-    margin: 0 15px;
-    color: #00e613;
-}
-
-.brand p {
-    font-size: 2.5rem;
-}
-
-.section {
-    display: flex;
-    width: 100%;
-}
-
-.section .icon {
-    width: 50%;
-}
-
-.section .text {
-    width: 50%;
-    height: 100%;
-    padding: 20px 75px;
-    vertical-align: center;
-}
-
-.section .text .title {
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
-}
-
-.section .text .body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home .pricing-info .title {
     font-size: 1.5rem;
+  }
+  .home .pricing-info .pricing-btn {
+    margin: 20px 20px;
+  }
 }
-
-.apply-link {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #00e613;
-}
-
-.apply-link a {
-    text-decoration: underline;
-    text-decoration-style: solid;
-}
-
-img {
-    object-fit: scale-down;
-}
-
-.pricing-info {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.pricing-info .title {
-    font-size: 2rem;
-}
-
-.pricing-info .pricing-btn {
-    background-color: #00e613;
-    color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 10px 20px;
-    width: 150px;
-    margin: 0 20px;
-    border-radius: 10%;
-}
-
-@media only screen and (max-width: 600px) {
-    .home-intro {
-        flex-direction: column-reverse;
-    }
-
-    .home-intro-text {
-        width: 100%;
-    }
-
-    .home-intro-img {
-        width: 100%;
-    }
-
-    .home-intro-text-slogan {
-        font-size: 1.2rem;
-        padding: 30px 20px;
-    }
-
-    .home-intro-text-buttons div {
-        padding: 10px 10px;
-        margin: 20px 20px;
-    }
-
-    .brand {
-        font-size: 2rem;
-    }
-
-    .brand p {
-        font-size: 1.5rem;
-    }
-
-    .section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .section-reverse {
-        flex-direction: column-reverse;
-    }
-
-    .section .icon,
-    .section .text {
-        width: 80%;
-        margin: 0;
-    }
-
-    .section .text .title {
-        font-size: 1.7rem;
-    }
-
-    .section .text .body {
-        font-size: 1.2rem;
-    }
-
-    .pricing-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .pricing-info .title {
-        font-size: 1.5rem;
-    }
-
-    .pricing-info .pricing-btn {
-        margin: 20px 20px;
-    }
-}
+/*# sourceMappingURL=Home.css.map */

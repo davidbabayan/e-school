@@ -1,6 +1,6 @@
 .App {
   display: grid;
-  grid-template-rows: 70px auto 50px;
+  grid-template-rows: auto auto 50px;
   background-color: #f5fff5;
   font-family: "Balsamiq Sans", cursive;
 }
@@ -24,9 +24,13 @@
   align-items: center;
 }
 
-@media only screen and (max-width: 600px) {
+a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 900px) {
   .App {
-    grid-template-rows: 50px auto 50px;
+    grid-template-rows: auto auto 50px;
   }
   .App-content {
     margin: 0 25px;

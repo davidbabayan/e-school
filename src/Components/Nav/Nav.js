@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link, BrowserRouter as Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGraduationCap, faSignInAlt, faBars } from '@fortawesome/free-solid-svg-icons';
 import './Nav.css';
@@ -9,14 +9,14 @@ import DesktopNav from './DesktopNav';
 
 function Nav() {
     return (
-        <Router>
+        <React.Fragment>
             <div className="mobile-nav">
                 <MobileNav />
             </div>
             <div className='desktop-nav'>
                 <DesktopNav />
             </div>
-        </Router>
+        </React.Fragment>
     );
 }
 

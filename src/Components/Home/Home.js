@@ -41,7 +41,9 @@ function Home() {
                         We will register it and connect to our system!
                     </p>
                     <div className="apply-link">
-                        <a href="#">Apply for free Office 365</a>
+                        <a target='_blank' href='http://bit.ly/freeoffice365reg'>
+                            <span>Apply for free Office 365</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -74,7 +76,7 @@ function Home() {
             </div>
             <div className="pricing-info">
                 <p className="title">Getting interesting?</p>
-                <a className="pricing-btn" href="#">View Pricing</a>
+                <Link to='/pricing'><span className="pricing-btn" href="#">View Pricing</span></Link>
                 <a className="pricing-btn" href="#">Apply For Office 365</a>
             </div>
         </div>

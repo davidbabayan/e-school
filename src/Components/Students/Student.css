@@ -1,0 +1,315 @@
+.student {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px;
+}
+
+.student .back {
+  padding: 15px;
+  background-color: #00e613;
+  color: white;
+  text-align: center;
+  width: 100px;
+  font-size: 1.2rem;
+}
+
+.student .title {
+  font-size: 2rem;
+  color: black;
+  margin: 20px;
+  text-align: center;
+}
+
+.student .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.student .form .student-form {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.student .form .student-form label {
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+
+.student .form .student-form input {
+  font-size: 1.5rem;
+  border: solid 3px black;
+}
+
+.student .form .student-form .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 20px 10px;
+}
+
+.student .form .student-form .button-container .button {
+  background-color: #00e613;
+  color: white;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10%;
+  font-size: 1.5rem;
+}
+
+.students {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 20px;
+}
+
+.students .title {
+  margin: 20px 20px;
+}
+
+.students .create-new {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 70%;
+}
+
+.students .create-new button {
+  background-color: #00e613;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10%;
+  padding: 10px 20px;
+}
+
+.students .create-new button:hover {
+  background-color: #11991c;
+}
+
+.students .filter-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 20px;
+}
+
+.students .filter-options .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 52%;
+}
+
+.students .filter-options .search input {
+  width: 80%;
+  font-size: 1.5rem;
+  border: solid 3px #00e613;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.students .filter-options .search div {
+  font-size: 1.5rem;
+  background-color: #00e613;
+  color: white;
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.students .filter-options .grade {
+  background-color: #00e613;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  font-size: 1.5rem;
+}
+
+.students .filter-options .grade option {
+  color: white;
+  background-color: #00e613;
+}
+
+.students .filter-options .grade:hover {
+  background-color: #11991c;
+}
+
+.students hr {
+  margin: 10px 0;
+}
+
+.students .student-list {
+  width: 70%;
+}
+
+.students .student-list tbody tr td {
+  font-size: 1.3rem;
+  padding: 20px 20px;
+  border-left: dashed 2px #00e613;
+  border-bottom: dashed 2px #00e613;
+}
+
+.students .student-list tbody tr:hover {
+  background-color: lightgreen;
+}
+
+.students .student-list tr th {
+  color: #00e613;
+  padding: 10px 0;
+  font-size: 1.5rem;
+  border-left: dashed 2px #00e613;
+  border-bottom: dashed 2px #00e613;
+}
+
+.students .student-list tr th:first-child {
+  border-left: none;
+}
+
+.students .student-list tr td:first-child {
+  border-left: none;
+  color: blue;
+}
+
+@media only screen and (max-width: 900px) {
+  .student .back {
+    padding: 10px;
+    width: 70px;
+    font-size: 1rem;
+  }
+  .student .title {
+    font-size: 1.5rem;
+  }
+  .student .form .student-form {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .student .form .student-form label {
+    margin: 20px 0;
+    font-size: 1.5rem;
+  }
+  .student .form .student-form input {
+    font-size: 1.5rem;
+    border: solid 3px black;
+  }
+  .student .form .student-form .button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 20px 10px;
+  }
+  .student .form .student-form .button-container .button {
+    background-color: #00e613;
+    color: white;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10%;
+    font-size: 1.5rem;
+  }
+  .students {
+    padding: 20px 10px;
+  }
+  .students .title {
+    font-size: 2rem;
+    margin: 10px 10px;
+  }
+  .students .create-new {
+    width: 100%;
+  }
+  .students .create-new button {
+    font-size: 1rem;
+  }
+  .students .filter-options {
+    width: 100%;
+  }
+  .students .filter-options .search {
+    width: 80%;
+  }
+  .students .filter-options .search input {
+    width: 80%;
+    font-size: 1rem;
+  }
+  .students .filter-options .search div {
+    font-size: 1rem;
+    width: 10%;
+  }
+  .students .filter-options .grade {
+    background-color: #00e613;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    font-size: 1rem;
+  }
+  .students .filter-options .grade option {
+    color: white;
+    background-color: #00e613;
+  }
+  .students hr {
+    margin: 0;
+    width: 100%;
+  }
+  .students .student-list {
+    width: 100%;
+  }
+  .students .student-list tbody tr td {
+    font-size: 0.8rem;
+    padding: 10px 0px;
+    text-align: center;
+  }
+  .students .student-list tr th {
+    padding: 10px 0;
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=Student.css.map */

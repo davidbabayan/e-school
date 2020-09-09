@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, BrowserRouter as Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, faBookmark } from '@fortawesome/free-solid-svg-icons';
 import './Pricing.css';
@@ -56,13 +56,11 @@ function Pricing() {
             <hr />
             <div className="demo">
                 <div>Still thinking?</div>
-                <Router>
-                    <Link to='/demo'>
-                        <div className='to-demo'>
-                            Watch Demo
+                <Link to='/demo'>
+                    <div className='to-demo'>
+                        Watch Demo
                         </div>
-                    </Link>
-                </Router>
+                </Link>
             </div>
         </div>
     );

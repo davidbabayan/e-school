@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { useState } from 'react';
-import { Link, BrowserRouter as Router } from 'react-router-dom';
+import { useState, Fragment } from 'react';
+import { Link, } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSignInAlt, faBars } from '@fortawesome/free-solid-svg-icons';
 import Hamburger from 'hamburger-react'
@@ -11,7 +11,7 @@ function MobileNav() {
     const [isOpen, setOpen] = useState(false);
 
     return (
-        <Router>
+        <Fragment>
             <div className='nav'>
 
                 <Hamburger color='#fff' toggled={isOpen} toggle={setOpen} />
@@ -43,7 +43,7 @@ function MobileNav() {
                     </ul>
                 </div> : <div></div>
             }
-        </Router>
+        </Fragment>
     );
 }
 
