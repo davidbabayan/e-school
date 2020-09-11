@@ -1,0 +1,55 @@
+.create-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.create-user .title {
+  text-align: center;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.create-user .type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.create-user .type .type-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+}
+
+.create-user .type .type-item input {
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .create-user .title {
+    font-size: 2rem;
+  }
+  .create-user .type .type-item {
+    font-size: 1.5rem;
+  }
+  .create-user .type .type-item input {
+    margin-right: 20px;
+  }
+}
+/*# sourceMappingURL=New.css.map */

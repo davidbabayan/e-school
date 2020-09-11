@@ -1,11 +1,11 @@
 import React from 'react';
-import './Student.css';
+import './Teacher.css';
 import { Link, Redirect, withRouter } from 'react-router-dom';
 import { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
-class Students extends Component {
+class Teacher extends Component {
 
     constructor(props) {
         super(props);
@@ -15,36 +15,31 @@ class Students extends Component {
                     firstName: 'Eavid',
                     lastName: 'Babayan',
                     username: 'mavid.babayan',
-                    grade: 5,
-                    groupPrefix: 'A'
+                    topic: 'Math'
                 },
                 {
                     firstName: 'Eavid',
                     lastName: 'Babayan',
                     username: 'mvid.babayan',
-                    grade: 5,
-                    groupPrefix: 'C'
+                    topic: 'Math'
                 },
                 {
                     firstName: 'Hayarpi',
                     lastName: 'Hovhannisyan',
                     username: 'hayarpi.hovhannisyan',
-                    grade: 5,
-                    groupPrefix: 'B'
+                    topic: 'History'
                 },
                 {
                     firstName: 'Nare',
                     lastName: 'Karapetyan',
                     username: 'nare.karapetyan',
-                    grade: 4,
-                    groupPrefix: 'C'
+                    topic: 'English'
                 },
                 {
                     firstName: 'David',
                     lastName: 'Babayan',
                     username: 'david.babayan',
-                    grade: 5,
-                    groupPrefix: 'B'
+                    topic: 'Phisics'
                 }
             ],
             orderBy: 'grade',
@@ -64,12 +59,12 @@ class Students extends Component {
                     return a.username.localeCompare(b.username);
                 else if (orderBy === 'name')
                     return (a.firstName + ' ' + a.lastName).localeCompare(b.firstName + ' ' + b.lastName);
-                else if (orderBy === 'grade')
-                    return (a.grade + '-' + a.groupPrefix).localeCompare(b.grade + '-' + b.groupPrefix);
+                else if (orderBy === 'topic')
+                    return a.topic.localeCompare(b.topic);
             })
             .filter((e) => {
                 if (filterBy.length > 0)
-                    return e.grade + '-' + e.groupPrefix === filterBy;
+                    return e.topic === filterBy;
                 return true;
             })
             .filter((e) => {
@@ -83,26 +78,25 @@ class Students extends Component {
         const that = this,
             { students } = that.state;
         const list = students.sort((a, b) => {
-            return (a.grade + '-' + a.groupPrefix).localeCompare(b.grade + '-' + b.groupPrefix);
+            return a.topic.localeCompare(b.topic);
         }).filter((item, pos, arr) => {
-            return !pos || item.grade + '-' + item.groupPrefix != arr[pos - 1].grade + '-' + arr[pos - 1].groupPrefix;
+            return !pos || item.topic != arr[pos - 1].topic;
         });
 
         return list.map((item) => {
-            const val = item.grade + '-' + item.groupPrefix;
-            return <option value={val}>{val}</option>;
+            return <option value={item.topic}>{item.topic}</option>;
         });
     }
 
     render() {
 
         return (
-            <div className="students">
+            <div className="teachers">
                 <div className="create-new">
-                    <Link to='new/user/student'><button>New</button></Link>
+                    <Link to='new/user/teacher'><button>New</button></Link>
                 </div>
                 <div className="title">
-                    <span>Students</span>
+                    <span>Teachers</span>
                 </div>
                 <div className="filter-options">
                     <div className="search">
@@ -119,20 +113,20 @@ class Students extends Component {
                     </div>
                 </div>
                 <hr />
-                <table className="student-list">
+                <table className="teacher-list">
                     <thead>
                         <tr>
                             <th onClick={(e) => this.setState({ orderBy: 'name' })}>Name</th>
                             <th onClick={(e) => this.setState({ orderBy: 'username' })}>Username</th>
-                            <th onClick={(e) => this.setState({ orderBy: 'grade' })}>Class</th>
+                            <th onClick={(e) => this.setState({ orderBy: 'topic' })}>Topic</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {this.getSortedItems().map(({ username, grade, firstName, lastName, groupPrefix }) => {
+                        {this.getSortedItems().map(({ username, topic, firstName, lastName }) => {
                             return <tr key={username} onClick={() => this.props.history.push('student/' + username)}>
                                 <td>{firstName + ' ' + lastName}</td>
                                 <td>{username}</td>
-                                <td>{grade + '-' + groupPrefix}</td>
+                                <td>{topic}</td>
                             </tr>;
                         })}
                     </tbody>
@@ -142,4 +136,4 @@ class Students extends Component {
     }
 }
 
-export default withRouter(Students);
+export default withRouter(Teacher);

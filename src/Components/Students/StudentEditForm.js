@@ -1,4 +1,5 @@
 import React, { Component, useState } from 'react';
+import './StudentEditForm.css';
 
 class StudentEditForm extends Component {
 
@@ -6,8 +7,8 @@ class StudentEditForm extends Component {
         firstName: '',
         lastName: '',
         username: '',
-        birthday: new Date(),
-        admissionYear: new Date(),
+        birthday: new Date(Date.now()),
+        admissionYear: new Date(Date.now()),
         currentGrade: 0,
         groupPrefix: '',
         email: '',

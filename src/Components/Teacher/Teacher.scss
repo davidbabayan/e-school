@@ -1,4 +1,4 @@
-.student {
+.teacher {
   display: flex;
   flex-direction: column;
   margin: 20px;
@@ -25,7 +25,7 @@
   }
 }
 
-.students {
+.teachers {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,7 +104,7 @@
     margin: 10px 0;
   }
 
-  .student-list {
+  .teacher-list {
     width: 70%;
 
     tbody {
@@ -144,7 +144,7 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .student {
+  .teacher {
     .back {
       padding: 10px;
       width: 70px;
@@ -156,7 +156,7 @@
     }
   }
 
-  .students {
+  .teachers {
     padding: 20px 10px;
 
     .title {
@@ -208,7 +208,7 @@
       width: 100%;
     }
 
-    .student-list {
+    .teacher-list {
       width: 100%;
 
       tbody {
