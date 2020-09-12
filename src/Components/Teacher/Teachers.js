@@ -10,7 +10,7 @@ class Teacher extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            students: [
+            teachers: [
                 {
                     firstName: 'Eavid',
                     lastName: 'Babayan',
@@ -50,9 +50,9 @@ class Teacher extends Component {
 
     getSortedItems() {
         const that = this,
-            { students, orderBy, filterBy, searchBy } = that.state;
+            { teachers, orderBy, filterBy, searchBy } = that.state;
 
-        return students
+        return teachers
             .slice()
             .sort((a, b) => {
                 if (orderBy === 'username')
@@ -74,10 +74,10 @@ class Teacher extends Component {
             });
     }
 
-    getGradeFilterItems() {
+    getTopicFilterItems() {
         const that = this,
-            { students } = that.state;
-        const list = students.sort((a, b) => {
+            { teachers } = that.state;
+        const list = teachers.sort((a, b) => {
             return a.topic.localeCompare(b.topic);
         }).filter((item, pos, arr) => {
             return !pos || item.topic != arr[pos - 1].topic;
@@ -108,7 +108,7 @@ class Teacher extends Component {
                     <div>
                         <select className='grade' onChange={(e) => this.setState({ filterBy: e.nativeEvent.target.value })}>
                             <option value=''>All</option>
-                            {this.getGradeFilterItems()}
+                            {this.getTopicFilterItems()}
                         </select>
                     </div>
                 </div>

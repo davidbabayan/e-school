@@ -1,0 +1,236 @@
+.class {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px;
+}
+
+.class .back {
+  padding: 15px;
+  background-color: #00e613;
+  color: white;
+  text-align: center;
+  width: 100px;
+  font-size: 1.2rem;
+}
+
+.class .title {
+  font-size: 2rem;
+  color: black;
+  margin: 20px;
+  text-align: center;
+}
+
+.class .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.classes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 20px;
+}
+
+.classes .title {
+  margin: 20px 20px;
+}
+
+.classes .create-new {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 70%;
+}
+
+.classes .create-new button {
+  background-color: #00e613;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10%;
+  padding: 10px 20px;
+}
+
+.classes .create-new button:hover {
+  background-color: #11991c;
+}
+
+.classes .filter-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 20px;
+}
+
+.classes .filter-options .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 52%;
+}
+
+.classes .filter-options .search input {
+  width: 80%;
+  font-size: 1.5rem;
+  border: solid 3px #00e613;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.classes .filter-options .search div {
+  font-size: 1.5rem;
+  background-color: #00e613;
+  color: white;
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.classes .filter-options .group {
+  background-color: #00e613;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  font-size: 1.5rem;
+}
+
+.classes .filter-options .group option {
+  color: white;
+  background-color: #00e613;
+}
+
+.classes .filter-options .grade:hover {
+  background-color: #11991c;
+}
+
+.classes hr {
+  margin: 10px 0;
+}
+
+.classes .class-list {
+  width: 70%;
+}
+
+.classes .class-list tbody tr td {
+  font-size: 1.3rem;
+  padding: 20px 20px;
+  border-left: dashed 2px #00e613;
+  border-bottom: dashed 2px #00e613;
+}
+
+.classes .class-list tbody tr:hover {
+  background-color: lightgreen;
+}
+
+.classes .class-list tr th {
+  color: #00e613;
+  padding: 10px 0;
+  font-size: 1.5rem;
+  border-left: dashed 2px #00e613;
+  border-bottom: dashed 2px #00e613;
+}
+
+.classes .class-list tr th:first-child {
+  border-left: none;
+}
+
+.classes .class-list tr td:first-child {
+  border-left: none;
+  color: blue;
+}
+
+@media only screen and (max-width: 900px) {
+  .class .back {
+    padding: 10px;
+    width: 70px;
+    font-size: 1rem;
+  }
+  .class .title {
+    font-size: 1.5rem;
+  }
+  .classes {
+    padding: 20px 10px;
+  }
+  .classes .title {
+    font-size: 2rem;
+    margin: 10px 10px;
+  }
+  .classes .create-new {
+    width: 100%;
+  }
+  .classes .create-new button {
+    font-size: 1rem;
+  }
+  .classes .filter-options {
+    width: 100%;
+  }
+  .classes .filter-options .search {
+    width: 80%;
+  }
+  .classes .filter-options .search input {
+    width: 80%;
+    font-size: 1rem;
+  }
+  .classes .filter-options .search div {
+    font-size: 1rem;
+    width: 10%;
+  }
+  .classes .filter-options .group {
+    background-color: #00e613;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    font-size: 1rem;
+  }
+  .classes .filter-options .group option {
+    color: white;
+    background-color: #00e613;
+  }
+  .classes hr {
+    margin: 0;
+    width: 100%;
+  }
+  .classes .class-list {
+    width: 100%;
+  }
+  .classes .class-list tbody tr td {
+    font-size: 0.8rem;
+    padding: 10px 0px;
+    text-align: center;
+  }
+  .classes .class-list tr th {
+    padding: 10px 0;
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=Class.css.map */

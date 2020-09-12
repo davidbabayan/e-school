@@ -1,0 +1,82 @@
+.class-form {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.class-form label {
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+
+.class-form input {
+  font-size: 1.5rem;
+  border: solid 3px black;
+}
+
+.class-form .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 20px 10px;
+}
+
+.class-form .button-container .button {
+  background-color: #00e613;
+  color: white;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10%;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .class-form {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .class-form label {
+    margin: 20px 0;
+    font-size: 1.5rem;
+  }
+  .class-form input {
+    font-size: 1.5rem;
+    border: solid 3px black;
+  }
+  .class-form .button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 20px 10px;
+  }
+  .class-form .button-container .button {
+    background-color: #00e613;
+    color: white;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10%;
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=ClassEditForm.css.map */

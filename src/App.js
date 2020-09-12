@@ -13,6 +13,7 @@ import Students from './Components/Students/Students';
 import Teachers from './Components/Teacher/Teachers';
 import Teacher from './Components/Teacher/Teacher';
 import User from './Components/New/User';
+import Classes from './Components/Class/Classes';
 
 function App() {
   return (
@@ -31,15 +32,14 @@ function App() {
             <Route path='/student' exact component={Student} />
             <Route path='/teachers' exact component={Teachers} />
             <Route path='/teacher' exact component={Teacher} />
+            <Route path='/classes' exact component={Classes} />
             <Route path='/new/user/:type?' exact component={User} />
             {/* 
-            <Route path='/demo' exact component={} />            
-            <Route path='/classes' exact component={} />
+            <Route path='/demo' exact component={} />
             <Route path='/class/:id' exact component={} />
-            
             <Route path='/new/class' exact component={} />
             <Route path='/account' exact component={} />
-            <Route path='/account/license' exact component={} /> */}
+            */}
           </Switch>
         </section>
         <footer className='App-footer'>
